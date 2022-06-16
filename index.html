@@ -9,52 +9,48 @@
     <title>js client validation</title>
 </head>
 <body>
-    <div class="wrapper-form">
+    <div class="wrapper-form py-5">
         <form id="submit-form" action="#" method="POST">
             <div class="mb-3 ax-wrapper" name='title'>
                 <label for="title">Titolo</label>
                 <input type="text" name="title" id="title" class="form-control" placeholder="Inserisci un titolo per l'annuncio del tuo appartamento">
-                <span class="errore" name='title'></span>
+                <span class="invalid-feedback"></span>
             </div>
             <div class="mb-3" name='description'>
                 <label for="description">Descrizione</label>
                 <textarea class="form-control" id="description" name="description" rows="5" placeholder="Descrivi il tuo appartamento.." ></textarea>
-                <span class="errore" name='description'></span>
-
+                <span class="invalid-feedback"></span>
             </div>
             <div class="mb-3" name="beds_number">
                 <label for="beds_number">Numero Letti</label>
                 <input type="number" name="beds_number" id="beds_number" class="form-control" 
                 placeholder="">
-                <span class="errore" name='beds_number'></span>
-
+                <span class="invalid-feedback"></span>
             </div>
             <div class="mb-3" name="rooms_number">
                 <label for="rooms_number">Numero Camere</label>
                 <input type="number" name="rooms_number" id="rooms_number" class="form-control" 
                 placeholder="">
-                <span class="errore" name='rooms_number'></span>
-
+                <span class="invalid-feedback"></span>
             </div>
             <div class="mb-3" name="bathrooms_number">
                 <label for="bathrooms_number">Numero Bagni</label>
                 <input type="number" name="bathrooms_number" id="bathrooms_number" class="form-control" 
                 placeholder="">
-                <span class="errore" name='bathrooms_number'></span>
-
+                <span class="invalid-feedback"></span>
             </div>
             <div class="mb-3" name="square_meters">
                 <label for="square_meters">Metri quadrati</label>
                 <input type="number" name="square_meters" id="square_meters" class="form-control" 
                 placeholder="">
-                <span class="errore" name='square_meters'></span>
+                <span class="invalid-feedback"></span>
             </div>
             <div class="mb-3" name="price_per_night">
                 <label for="price_per_night">Prezzo a notte</label>
                 <input type="number" name="price_per_night" id="price_per_night" class="form-control" 
                 step=".50"
                 placeholder="">
-                <span class="errore" name='price_per_night'></span>
+                <span class="invalid-feedback"></span>
             </div>
             <div class="mb-3" name="is_visible">
                 <label for="is_visible">Disponibilità</label>
@@ -62,17 +58,17 @@
                     <option value="0">Non disponibile</option>
                     <option value="1" selected>Subito disponibile</option>
                 </select>
-                <span class="errore" name='is_visible'></span>
+                <span class="invalid-feedback"></span>
             </div>
             <div class="mb-3" name="address">
                 <label for="address">Indirizzo</label>
                 <input type="text" name="address" id="address" class="form-control" placeholder="Inserisci il nome del tuo appartamento">
-                <span class="errore" name='address'></span>
+                <span class="invalid-feedback"></span>
             </div>
             <div class="mb-3" name="image_path">
                 <label for="image_path">Immagine post</label>
                 <input type="text" name="image_path" id="image_path" class="form-control" placeholder="Immagine URL del post">
-                <span class="errore" name='image_path'></span>
+                <span class="invalid-feedback"></span>
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
